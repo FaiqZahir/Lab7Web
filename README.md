@@ -237,7 +237,14 @@ Kemudian ubah file ``app/view/about.php`` seperti berikut.
 
 Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
 
+1.Home
 ![Gambar 17](img/gambar17.png)
+
+2.Artikel
 ![Gambar 18](img/gambar18.png)
+
+3.About
 ![Gambar 19](img/gambar19.png)
+
+4.Contact
 ![Gambar 20](img/gambar20.png)
