@@ -246,5 +246,5 @@ Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
 3.About
 ![Gambar 19](img/gambar19.png)
 
-4.Contact
+4.Kontak
 ![Gambar 20](img/gambar20.png)
