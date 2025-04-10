@@ -24,7 +24,7 @@ Apache klik ``Config -> PHP.ini``
 Pada bagian extention, hilangkan tanda ; (titik koma) pada ekstensi yang akan
 diaktifkan. Kemudian simpan kembali filenya dan restart Apache web server.
 
-![img2](img/ekstensi.png)
+![Gambar 2](img/gambar2.png)
 
 ## Instalasi  Codeigniter 4
 Untuk melakukan instalasi Codeigniter 4 dapat dilakukan dengan dua cara, yaitu cara manual dan menggunakan composer. Pada praktikum ini kita menggunakan cara
@@ -34,13 +34,13 @@ manual.
 - Ubah nama direktory framework-4.x.xx menjadi ci4.
 - Buka browser dengan alamat http://localhost/lab11_ci/ci4/public/
 
-![img3](img/codeigniter.png)
+![Gambar 3](img/gambar3.png)
 
 ## Menjalankan CLI (Command Line Interface)
 Codeigniter 4 menyediakan CLI untuk mempermudah proses development. Untuk
 mengakses CLI buka terminal/command prompt.
 
-![img4](img/cli.png)
+![Gambar 4](img/gambar4.png)
 
 Arahkan lokasi direktori sesuai dengan direktori kerja project dibuat ``(xampp/htdocs/lab11_ci/ci4/)``.
 
@@ -49,26 +49,26 @@ Perintah yang dapat dijalankan untuk memanggil CLI Codeigniter adalah :
 php spark
 ```
 
-![img5](img/cli2.png)
+![Gambar 5](img/gambar5.png)
 
 ## Mengaktifkan Mode Debugging
 - Ketik ``php spark serve`` pada CLI untuk menjalankan.
 
-![img6](img/cli3.png)
+![Gambar 6](img/gambar6.png)
 
 - Menampilkan pesan error, untuk mencobanya ubah kode file ``app/Controllers/home.php``, hapus ;nya.
   Ketik ``http://localhost:8080`` pada browser. Berikut tampilan error nya.
 
-![img8](img/error_home.png)
+![Gambar 7](img/gambar7.png)
 
 - Kemudian, ubah nama file ``env`` menjadi ``.env``. Masuk ke dalam filenya, hapus tanda ``#`` pada ``CI_ENVIRONMENT =``
 
-![img9](img/konfigurasi_ci.png)
+![Gambar 8](img/gambar8.png)
 
 
 ## Struktur Direktori
 
-![img11](img/sdir.png)
+![Gambar 9](img/gambar9.png)
 
 ## Routing and Controller
 Router terletak pada file ``app/config/Routes.php``
@@ -81,14 +81,14 @@ $routes->get('/contact', 'Page::contact');
 $routes->get('/faqs', 'Page::faqs');
 ```
 
-![img8](img/route.png)
+![Gambar 10](img/gambar10.png)
 
 Untuk mengetahui route yang ditambahkan sudah benar, buka CLI dan jalankan
 perintah berikut.
 ```
 php spark routes
 ```
-![img8](img/cli_route.png)
+![Gambar 11](img/gambar11.png)
 
 Selanjutnya coba akses route yang telah dibuat dengan mengakses alamat url http://localhost:8080/about
 
@@ -118,7 +118,7 @@ class Page extends BaseController
 
 Selanjutnya refresh Kembali browser, maka akan ditampilkan hasilnya yaitu halaman sudah dapat diakses.
 
-![img8](img/about.png)
+![Gambar 12](img/gambar12.png)
 
 - Auto Routing
 Secara default fitur autoroute pada Codeiginiter sudah aktif. Untuk mengubah status autoroute dapat mengubah nilai variabelnya. Untuk menonaktifkan ubah nilai ``true`` menjadi ``false``.
@@ -136,7 +136,7 @@ public function tos()
 ```
 Method ini belum ada pada routing, sehingga cara mengaksesnya dengan menggunakan alamat: http://localhost:8080/page/tos
 
-![img8](img/controllerpage.png)
+![Gambar 13](img/gambar13.png)
 
 ## Membuat View
 Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file baru dengan nama ``about.php`` pada direktori view ``(app/view/about.php)`` kemudian isi kodenya seperti berikut.
@@ -154,7 +154,7 @@ Selanjutnya adalam membuat view untuk tampilan web agar lebih menarik. Buat file
     </body>
 </html>
 ```
-![img8](img/about_view.png)
+![img14](img/gambar14.png)
 
 Ubah ``method about`` pada class ``Controller Page`` menjadi seperti berikut:
 ```php
@@ -167,12 +167,12 @@ public function about()
 }
 ```
 Kemudian lakukan refresh pada halaman tersebut.
-![img8](img/iniabout.png)
+![Gambar 15](img/gambar15.png)
 
 ## Membuat Layout Web dengan CSS
 Buat file css pada direktori ``public`` dengan nama ``style.css`` (copy file dari praktikum ``lab4_layout``. Kita akan gunakan layout yang pernah dibuat pada praktikum 4.
 
-![img8](img/css.png)
+![img16](img/gambar16.png)
 
 Kemudian buat folder template pada direktori view kemudian buat file ``header.php`` dan ``footer.php`` berikut isi nya
 ```php
@@ -237,4 +237,7 @@ Kemudian ubah file ``app/view/about.php`` seperti berikut.
 
 Selanjutnya refresh tampilan pada alamat http://localhost:8080/about
 
-![img8](img/layout_view.png)
+![Gambar 17](img/gambar17.png)
+![Gambar 18](img/gambar18.png)
+![Gambar 19](img/gambar19.png)
+![Gambar 20](img/gambar20.png)
