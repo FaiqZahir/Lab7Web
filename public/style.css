@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+#container {
+  width: 80%;
+  height: 100vh;
+  padding: 20px 0;
+  margin: auto;
+}
+
+#container header h1 {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+#container nav {
+  display: flex;
+  gap: 2rem;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 1.5rem;
+}
+
+#container nav a {
+  font-size: 16px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  cursor: pointer;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#container nav a:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+#wrapper {
+  width: 100%;
+  display: flex;
+  gap: 3rem;
+}
+
+#main {
+  width: 90%;
+  border: 3px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px,
+    5px 5px 0px 0px;
+}
+
+#main .entry {
+  padding: 10px 20px;
+}
+
+#main .entry h2 a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgba(128, 128, 128, 1.2);
+}
+
+#main .entry h2 a:hover {
+  color: black;
+}
+
+#sidebar {
+}

@@ -1,0 +1,1294 @@
+CRITICAL - 2025-03-20 00:46:14 --> ErrorException: Undefined variable $title
+[Method: GET, Route: page/artikel/artikel-pertama]
+in APPPATH\Views\template\header.php on line 7.
+ 1 APPPATH\Views\template\header.php(7): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $title', 'C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\template\\header.php', 7)
+ 2 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\template\\header.php')
+ 3 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(475): CodeIgniter\View\View->render('template/header', null, true)
+ 5 APPPATH\Views\artikel.php(1): CodeIgniter\View\View->include('template/header')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\artikel.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('artikel', [], true)
+ 9 APPPATH\Controllers\Page.php(28): view('artikel', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->artikel('artikel-pertama')
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+WARNING - 2025-03-20 01:46:15 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH\Router\RouteCollection.php on line 1026.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'artikel/add', 'Artikel::add')
+ 3 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 4 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 5 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Config\\Routes.php')
+ 6 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+WARNING - 2025-03-20 01:46:15 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Router\RouteCollection.php on line 1026.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH\Config\Routes.php(18): CodeIgniter\Router\RouteCollection->match([...], 'artikel/add', 'Artikel::add')
+ 3 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 4 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 5 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Config\\Routes.php')
+ 6 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+WARNING - 2025-03-20 01:46:15 --> [DEPRECATED] Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET". in SYSTEMPATH\Router\RouteCollection.php on line 1026.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "get" is deprecated. Use uppercase HTTP method like "GET".', 16384)
+ 2 APPPATH\Config\Routes.php(19): CodeIgniter\Router\RouteCollection->match([...], 'artikel/edit/(:any)', 'Artikel::edit/$1')
+ 3 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 4 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 5 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Config\\Routes.php')
+ 6 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+WARNING - 2025-03-20 01:46:15 --> [DEPRECATED] Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST". in SYSTEMPATH\Router\RouteCollection.php on line 1026.
+ 1 SYSTEMPATH\Router\RouteCollection.php(1026): trigger_error('Passing lowercase HTTP method "post" is deprecated. Use uppercase HTTP method like "POST".', 16384)
+ 2 APPPATH\Config\Routes.php(19): CodeIgniter\Router\RouteCollection->match([...], 'artikel/edit/(:any)', 'Artikel::edit/$1')
+ 3 SYSTEMPATH\Router\RouteCollection.php(799): CodeIgniter\Router\RouteCollection->{closure}(Object(CodeIgniter\Router\RouteCollection))
+ 4 APPPATH\Config\Routes.php(16): CodeIgniter\Router\RouteCollection->group('admin', Object(Closure))
+ 5 SYSTEMPATH\Router\RouteCollection.php(339): require('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Config\\Routes.php')
+ 6 SYSTEMPATH\CodeIgniter.php(821): CodeIgniter\Router\RouteCollection->loadRoutes()
+ 7 SYSTEMPATH\CodeIgniter.php(455): CodeIgniter\CodeIgniter->tryToRouteIt(null)
+ 8 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 02:27:41 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/artikel" cannot be found.
+[Method: POST, Route: admin/add]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/artikel')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(31): redirect('admin/artikel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->add()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 02:28:03 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/artikel" cannot be found.
+[Method: POST, Route: admin/add]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/artikel')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(31): redirect('admin/artikel')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->add()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:11:58 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:13:35 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:16:05 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:18:21 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:19:11 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:21:33 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 03:22:28 --> CodeIgniter\HTTP\Exceptions\HTTPException: The route for "admin/edit" cannot be found.
+[Method: POST, Route: admin/edit/11]
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 63.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(63): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('admin/edit')
+ 2 SYSTEMPATH\Common.php(855): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\Artikel.php(52): redirect('admin/edit')
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Artikel->edit('11')
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Artikel))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:54:19 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:54:20 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:54:30 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page]
+in APPPATH\Views\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:56:15 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page]
+in APPPATH\Views\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:56:19 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page]
+in APPPATH\Views\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:56:30 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 11:56:31 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:06:09 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:07:01 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page]
+in APPPATH\Views\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:07:06 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/contact]
+in APPPATH\Views\contact.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('contact', [], true)
+ 4 APPPATH\Controllers\Page.php(33): view('contact', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->contact()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:11:39 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/contact]
+in APPPATH\Views\contact.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('contact', [], true)
+ 4 APPPATH\Controllers\Page.php(33): view('contact', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->contact()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:11:45 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "main.php"
+[Method: GET, Route: page/about]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(212): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('main.php')
+ 2 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('main', [], true)
+ 3 APPPATH\Controllers\Page.php(12): view('main', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 5 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 6 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:13:51 --> CodeIgniter\View\Exceptions\ViewException: Unable to locate view cell class: "App\Cells\ArtikelTerkini".
+[Method: GET, Route: page/about]
+in SYSTEMPATH\View\Cell.php on line 189.
+ 1 SYSTEMPATH\View\Cell.php(189): CodeIgniter\View\Exceptions\ViewException::forInvalidCellClass('App\\Cells\\ArtikelTerkini')
+ 2 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 3 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 4 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layout/main', [], true)
+ 8 APPPATH\Controllers\Page.php(12): view('layout/main', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:13:54 --> CodeIgniter\View\Exceptions\ViewException: Unable to locate view cell class: "App\Cells\ArtikelTerkini".
+[Method: GET, Route: page/about]
+in SYSTEMPATH\View\Cell.php on line 189.
+ 1 SYSTEMPATH\View\Cell.php(189): CodeIgniter\View\Exceptions\ViewException::forInvalidCellClass('App\\Cells\\ArtikelTerkini')
+ 2 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 3 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 4 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layout/main', [], true)
+ 8 APPPATH\Controllers\Page.php(12): view('layout/main', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:14:14 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page]
+in APPPATH\Views\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:15:48 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page]
+in APPPATH\Views\home.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 4 APPPATH\Controllers\Home.php(14): view('home', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:15:52 --> CodeIgniter\View\Exceptions\ViewException: Unable to locate view cell class: "App\Cells\ArtikelTerkini".
+[Method: GET, Route: page/contact]
+in SYSTEMPATH\View\Cell.php on line 189.
+ 1 SYSTEMPATH\View\Cell.php(189): CodeIgniter\View\Exceptions\ViewException::forInvalidCellClass('App\\Cells\\ArtikelTerkini')
+ 2 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 3 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 4 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('layout/main', [], true)
+ 8 APPPATH\Controllers\Page.php(34): view('layout/main', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->contact()
+10 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+11 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+15 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:17:14 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:17:16 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:17:18 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:17:21 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:17:25 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:19:06 --> Error: Call to undefined method CodeIgniter\View\View::extends()
+[Method: GET, Route: page/about]
+in APPPATH\Views\about.php on line 1.
+ 1 SYSTEMPATH\View\View.php(224): include()
+ 2 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+ 4 APPPATH\Controllers\Page.php(12): view('about', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+ 6 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+ 7 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+10 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+11 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 12:55:14 --> CodeIgniter\View\Exceptions\ViewException: Unable to locate view cell class: "App\Cells\ArtikelTerkini".
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 189.
+ 1 SYSTEMPATH\View\Cell.php(189): CodeIgniter\View\Exceptions\ViewException::forInvalidCellClass('App\\Cells\\ArtikelTerkini')
+ 2 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 3 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', null, 0, null)
+ 4 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 5 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 6 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 8 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+ 9 APPPATH\Controllers\Home.php(14): view('home', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:22:14 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/artikel/artikel-kedua]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:22:35 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:22:50 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:22:52 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:22:56 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:22:58 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:23:00 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:23:02 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:23:03 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:23:04 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/contact]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:23:05 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/about]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:23:07 --> ErrorException: Declaration of App\Cells\ArtikelTerkini::render() must be compatible with CodeIgniter\View\Cell::render(string $library, $params = null, int $ttl = 0, ?string $cacheName = null): string
+[Method: GET, Route: page/home]
+in APPPATH\Cells\ArtikelTerkini.php on line 10.
+ 1 [internal function]: CodeIgniter\Debug\Exceptions->shutdownHandler()
+CRITICAL - 2025-03-20 13:31:53 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:31 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:33 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:34 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:34 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:35 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:35 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:36 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:36 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:37 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:37 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:38 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:38 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:39 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:39 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:40 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:32:40 --> ArgumentCountError: Too few arguments to function CodeIgniter\View\Cell::__construct(), 0 passed in C:\xampp\htdocs\Lab7Web\ci4\system\Config\Factories.php on line 152 and exactly 1 expected
+[Method: GET, Route: page/home]
+in SYSTEMPATH\View\Cell.php on line 62.
+ 1 SYSTEMPATH\Config\Factories.php(152): CodeIgniter\View\Cell->__construct()
+ 2 SYSTEMPATH\View\Cell.php(186): CodeIgniter\Config\Factories::__callStatic('cells', [])
+ 3 SYSTEMPATH\View\Cell.php(79): CodeIgniter\View\Cell->determineClass('App\\Cells\\ArtikelTerkini:render')
+ 4 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini', null, 0, null)
+ 5 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini')
+ 6 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+ 7 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+ 9 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+10 APPPATH\Controllers\Home.php(14): view('home', [...])
+11 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+12 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+13 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+14 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+15 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+16 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+17 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+ERROR - 2025-03-20 13:38:37 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\Lab7Web\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Lab7Web\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Lab7Web\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Lab7Web\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Lab7Web\ci4\app\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Lab7Web\ci4\system\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+#8 C:\xampp\htdocs\Lab7Web\ci4\system\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', Array)
+#9 C:\xampp\htdocs\Lab7Web\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artik...', Array, 0, 'AppCellsArtikel...')
+#10 C:\xampp\htdocs\Lab7Web\ci4\app\Views\layout\main.php(27): view_cell('App\\Cells\\Artik...')
+#11 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\Lab7Web\ci4\system\Common.php(1173): CodeIgniter\View\View->render('home', Array, true)
+#15 C:\xampp\htdocs\Lab7Web\ci4\app\Controllers\Home.php(14): view('home', Array)
+#16 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(933): App\Controllers\Home->index()
+#17 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#18 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\Lab7Web\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\Lab7Web\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\Lab7Web\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\Lab7Web\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-03-20 13:38:37 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: page/home]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+13 APPPATH\Controllers\Home.php(14): view('home', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:38:37 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+15 APPPATH\Controllers\Home.php(14): view('home', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:38:37 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('home', [], true)
+16 APPPATH\Controllers\Home.php(14): view('home', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+ERROR - 2025-03-20 13:38:53 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\Lab7Web\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Lab7Web\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Lab7Web\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Lab7Web\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Lab7Web\ci4\app\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Lab7Web\ci4\system\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+#8 C:\xampp\htdocs\Lab7Web\ci4\system\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', Array)
+#9 C:\xampp\htdocs\Lab7Web\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artik...', Array, 0, 'AppCellsArtikel...')
+#10 C:\xampp\htdocs\Lab7Web\ci4\app\Views\layout\main.php(27): view_cell('App\\Cells\\Artik...')
+#11 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\Lab7Web\ci4\system\Common.php(1173): CodeIgniter\View\View->render('about', Array, true)
+#15 C:\xampp\htdocs\Lab7Web\ci4\app\Controllers\Page.php(12): view('about', Array)
+#16 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(933): App\Controllers\Page->about()
+#17 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#18 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\Lab7Web\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\Lab7Web\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\Lab7Web\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\Lab7Web\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-03-20 13:38:53 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: page/about]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+13 APPPATH\Controllers\Page.php(12): view('about', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:38:53 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+15 APPPATH\Controllers\Page.php(12): view('about', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:38:53 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+16 APPPATH\Controllers\Page.php(12): view('about', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+ERROR - 2025-03-20 13:38:54 --> mysqli_sql_exception: Unknown column 'created_at' in 'order clause' in C:\xampp\htdocs\Lab7Web\ci4\system\Database\MySQLi\Connection.php:327
+Stack trace:
+#0 C:\xampp\htdocs\Lab7Web\ci4\system\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\Lab7Web\ci4\system\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\Lab7Web\ci4\system\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\Lab7Web\ci4\system\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+#6 C:\xampp\htdocs\Lab7Web\ci4\app\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+#7 C:\xampp\htdocs\Lab7Web\ci4\system\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+#8 C:\xampp\htdocs\Lab7Web\ci4\system\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', Array)
+#9 C:\xampp\htdocs\Lab7Web\ci4\system\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\Artik...', Array, 0, 'AppCellsArtikel...')
+#10 C:\xampp\htdocs\Lab7Web\ci4\app\Views\layout\main.php(27): view_cell('App\\Cells\\Artik...')
+#11 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(224): include('C:\\xampp\\htdocs...')
+#12 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+#13 C:\xampp\htdocs\Lab7Web\ci4\system\View\View.php(240): CodeIgniter\View\View->render('layout/main', Array, true)
+#14 C:\xampp\htdocs\Lab7Web\ci4\system\Common.php(1173): CodeIgniter\View\View->render('about', Array, true)
+#15 C:\xampp\htdocs\Lab7Web\ci4\app\Controllers\Page.php(12): view('about', Array)
+#16 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(933): App\Controllers\Page->about()
+#17 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+#18 C:\xampp\htdocs\Lab7Web\ci4\system\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#19 C:\xampp\htdocs\Lab7Web\ci4\system\Boot.php(334): CodeIgniter\CodeIgniter->run()
+#20 C:\xampp\htdocs\Lab7Web\ci4\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#21 C:\xampp\htdocs\Lab7Web\ci4\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#22 C:\xampp\htdocs\Lab7Web\ci4\system\rewrite.php(44): require_once('C:\\xampp\\htdocs...')
+#23 {main}
+CRITICAL - 2025-03-20 13:38:54 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+[Method: GET, Route: page/about]
+in SYSTEMPATH\Database\BaseConnection.php on line 692.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 2 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 3 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 4 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 5 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 6 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+ 7 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+ 8 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+ 9 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+10 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+11 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+12 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+13 APPPATH\Controllers\Page.php(12): view('about', [...])
+14 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+15 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+16 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+17 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+18 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+19 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+20 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:38:54 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 332.
+ 1 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 2 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 4 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 5 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 6 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 7 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 8 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+ 9 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+10 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+11 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+12 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+13 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+14 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+15 APPPATH\Controllers\Page.php(12): view('about', [...])
+16 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+17 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+18 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+19 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+20 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+21 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+22 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
+CRITICAL - 2025-03-20 13:38:54 --> [Caused by] mysqli_sql_exception: Unknown column 'created_at' in 'order clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 327.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(327): mysqli->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(738): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 3 SYSTEMPATH\Database\BaseConnection.php(652): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1649): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `artikel`
+ORDER BY `created_at` DESC
+ LIMIT 5', [], false)
+ 5 SYSTEMPATH\Model.php(286): CodeIgniter\Database\BaseBuilder->get()
+ 6 SYSTEMPATH\BaseModel.php(675): CodeIgniter\Model->doFindAll(0, 0)
+ 7 APPPATH\Cells\ArtikelTerkini.php(15): CodeIgniter\BaseModel->findAll()
+ 8 SYSTEMPATH\View\Cell.php(233): App\Cells\ArtikelTerkini->render()
+ 9 SYSTEMPATH\View\Cell.php(103): CodeIgniter\View\Cell->renderCell(Object(App\Cells\ArtikelTerkini), 'render', [])
+10 SYSTEMPATH\Common.php(1189): CodeIgniter\View\Cell->render('App\\Cells\\ArtikelTerkini::render', [], 0, 'AppCellsArtikelTerkinirender40cd750bba9870f18aada2478b24840a')
+11 APPPATH\Views\layout\main.php(27): view_cell('App\\Cells\\ArtikelTerkini::render')
+12 SYSTEMPATH\View\View.php(224): include('C:\\xampp\\htdocs\\Lab7Web\\ci4\\app\\Views\\layout\\main.php')
+13 SYSTEMPATH\View\View.php(227): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+14 SYSTEMPATH\View\View.php(240): CodeIgniter\View\View->render('layout/main', [], true)
+15 SYSTEMPATH\Common.php(1173): CodeIgniter\View\View->render('about', [], true)
+16 APPPATH\Controllers\Page.php(12): view('about', [...])
+17 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Page->about()
+18 SYSTEMPATH\CodeIgniter.php(507): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Page))
+19 SYSTEMPATH\CodeIgniter.php(354): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+20 SYSTEMPATH\Boot.php(334): CodeIgniter\CodeIgniter->run()
+21 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+22 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+23 SYSTEMPATH\rewrite.php(44): require_once('C:\\xampp\\htdocs\\Lab7Web\\ci4\\public\\index.php')
