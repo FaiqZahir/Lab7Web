@@ -363,3 +363,110 @@ detail artikel:
 ### Membuat tabel user
 
 ![Screenshot](public/readme/66.png)
+
+# Praktikum 5: Pagination dan Pencarian
+
+### Tujuan
+- Memahami konsep dasar Pagination dan Pencarian data.
+- Menerapkan pagination dan fitur pencarian pada daftar artikel.
+
+### Langkah-Langkah
+
+1. **Menambahkan Pagination di Controller**
+   - Tambahkan method `admin_index` di `app/Controllers/Artikel.php`:
+
+     ```php
+     public function admin_index()
+     {
+         $title = 'Daftar Artikel';
+         $q = $this->request->getVar('q') ?? '';
+         $model = new ArtikelModel();
+         $data = [
+             'title'   => $title,
+             'q'       => $q,
+             'artikel' => $model->like('judul', $q)->paginate(10),
+             'pager'   => $model->pager,
+         ];
+         return view('artikel/admin_index', $data);
+     }
+     ```
+
+2. **Menambahkan Form Pencarian**
+   - Tambahkan form pencarian di `app/Views/artikel/admin_index.php`:
+
+     ```php
+     <form method="get" class="form-search">
+         <input type="text" name="q" value="<?= $q; ?>" placeholder="Cari data">
+         <input type="submit" value="Cari" class="btn btn-primary">
+     </form>
+     ```
+
+3. **Menambahkan Navigasi Halaman**
+   - Tambahkan kode berikut setelah tabel artikel:
+
+     ```php
+     <?= $pager->only(['q'])->links(); ?>
+     ```
+
+4. **Uji Coba**
+   - Buka halaman admin artikel dan coba fitur pencarian serta navigasi halaman.
+
+### Screenshot:
+- ![Screenshot](public/readme/praktikum5-pagination.png)
+- ![Screenshot](public/readme/praktikum5-search.png)
+
+
+# Praktikum 6: Upload File Gambar
+
+### Tujuan
+- Mempelajari cara upload file (gambar) pada form artikel menggunakan CodeIgniter 4.
+
+### Langkah-Langkah
+
+1. **Menambahkan Input File**
+   - Tambahkan field di `app/Views/artikel/form_add.php`:
+
+     ```html
+     <form action="" method="post" enctype="multipart/form-data">
+         <!-- ... field lainnya ... -->
+         <p><input type="file" name="gambar"></p>
+     </form>
+     ```
+
+2. **Memproses Upload Gambar**
+   - Modifikasi method `add()` di `app/Controllers/Artikel.php`:
+
+     ```php
+     public function add()
+     {
+         $validation =  \Config\Services::validation();
+         $validation->setRules(['judul' => 'required']);
+         $isDataValid = $validation->withRequest($this->request)->run();
+
+         if ($isDataValid) {
+             $file = $this->request->getFile('gambar');
+             $file->move(ROOTPATH . 'public/gambar');
+
+             $artikel = new ArtikelModel();
+             $artikel->insert([
+                 'judul'  => $this->request->getPost('judul'),
+                 'isi'    => $this->request->getPost('isi'),
+                 'slug'   => url_title($this->request->getPost('judul')),
+                 'gambar' => $file->getName(),
+             ]);
+
+             return redirect('admin/artikel');
+         }
+
+         $title = "Tambah Artikel";
+         return view('artikel/form_add', compact('title'));
+     }
+     ```
+
+3. **Uji Coba**
+   - Coba tambahkan artikel dan upload gambar.
+
+### Screenshot:
+- ![Screenshot](public/readme/praktikum6-form-upload.png)
+- ![Screenshot](public/readme/praktikum6-upload-success.png)
+
