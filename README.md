@@ -409,11 +409,8 @@ detail artikel:
      ```
 
 4. **Uji Coba**
-   - Buka halaman admin artikel dan coba fitur pencarian serta navigasi halaman.
-
-### Screenshot:
-- ![Screenshot](public/readme/praktikum5-pagination.png)
-- ![Screenshot](public/readme/praktikum5-search.png)
+   ![Screenshot](public/readme/68.png)
+   ![Screenshot](public/readme/69.png)
 
 
 # Praktikum 6: Upload File Gambar
@@ -464,9 +461,6 @@ detail artikel:
      ```
 
 3. **Uji Coba**
-   - Coba tambahkan artikel dan upload gambar.
-
-### Screenshot:
-- ![Screenshot](public/readme/praktikum6-form-upload.png)
-- ![Screenshot](public/readme/praktikum6-upload-success.png)
+![Screenshot](public/readme/69.png)
+![Screenshot](public/readme/70.png)
 
