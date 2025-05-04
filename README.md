@@ -364,6 +364,94 @@ detail artikel:
 
 ![Screenshot](public/readme/66.png)
 
+## Praktikum 4 - Framework Lanjutan (Modul Login)
+
+### Tujuan Praktikum
+1. Memahami konsep dasar Auth dan Filter di CodeIgniter 4.
+2. Membuat modul login sederhana menggunakan model, controller, dan view.
+3. Mengamankan halaman admin dengan filter Auth.
+
+### Langkah-Langkah Praktikum
+
+#### 1. Membuat Tabel User
+```sql
+CREATE TABLE user (
+  id INT(11) AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(200) NOT NULL,
+  useremail VARCHAR(200),
+  userpassword VARCHAR(200)
+);
+```
+
+#### 2. Membuat Model `UserModel`
+```php
+namespace App\Models;
+
+use CodeIgniter\Model;
+
+class UserModel extends Model
+{
+    protected $table = 'user';
+    protected $primaryKey = 'id';
+    protected $useAutoIncrement = true;
+    protected $allowedFields = ['username', 'useremail', 'userpassword'];
+}
+```
+
+#### 3. Membuat Controller `User`
+```php
+public function login() {
+    helper(['form']);
+    ...
+}
+
+public function logout() {
+    session()->destroy();
+    return redirect()->to('/user/login');
+}
+```
+
+#### 4. Membuat View Login
+```html
+<form action="" method="post">
+  <input type="email" name="email">
+  <input type="password" name="password">
+</form>
+```
+
+#### 5. Menambahkan Seeder
+```php
+$model->insert([
+    'username' => 'admin',
+    'useremail' => 'admin@email.com',
+    'userpassword' => password_hash('admin123', PASSWORD_DEFAULT),
+]);
+```
+Lalu jalankan:
+```bash
+php spark db:seed UserSeeder
+```
+
+#### 6. Menambahkan Filter Auth
+```php
+if (!session()->get('logged_in')) {
+    return redirect()->to('/user/login');
+}
+```
+
+Tambahkan di `Filters.php` dan `Routes.php` seperti:
+```php
+'auth' => \App\Filters\Auth::class
+
+$routes->group('admin', ['filter' => 'auth'], function($routes) {
+    $routes->get('artikel', 'Admin\Artikel::index');
+});
+```
+
+### Screenshot:
+- ![Login Form](public/readme/praktikum4-login.png)
+- ![Auth Filter](public/readme/praktikum4-auth-filter.png)
+
 # Praktikum 5: Pagination dan Pencarian
 
 ### Tujuan
