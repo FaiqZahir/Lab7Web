@@ -358,7 +358,7 @@ after filter (kategori: PHP):
 detail artikel:
 ![Screenshot](public/readme/65.png)
 
-## Praktikum 4 - Framework Lanjutan (Modul Login)
+# Praktikum 4 - Framework Lanjutan (Modul Login)
 
 ### Tujuan Praktikum
 1. Memahami konsep dasar Auth dan Filter di CodeIgniter 4.
@@ -391,6 +391,7 @@ class UserModel extends Model
     protected $allowedFields = ['username', 'useremail', 'userpassword'];
 }
 ```
+![Screenshot](public/readme/66.png)
 
 #### 3. Membuat Controller `User`
 ```php
@@ -425,6 +426,7 @@ Lalu jalankan:
 ```bash
 php spark db:seed UserSeeder
 ```
+![Screenshot](public/readme/67.png)
 
 #### 6. Menambahkan Filter Auth
 ```php
@@ -441,10 +443,6 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
     $routes->get('artikel', 'Admin\Artikel::index');
 });
 ```
-
-### Screenshot:
-![Screenshot](public/readme/66.png)
-![Screenshot](public/readme/67.png)
 
 # Praktikum 5: Pagination dan Pencarian
 
