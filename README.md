@@ -544,7 +544,7 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
 
 3. **Uji Coba**
    
-![Screenshot](public/readme/69.png)
-
 ![Screenshot](public/readme/70.png)
+
+![Screenshot](public/readme/71.png)
 
