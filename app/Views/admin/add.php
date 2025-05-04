@@ -1,7 +1,7 @@
 <?= $this->include('template/admin_header'); ?>
 
 
-<form action="" method="post">
+<form action="" method="post" enctype="multipart/form-data">
     <h2><?= $title; ?></h2>
     <p>
         <input type="text" name="judul" placeholder="judul">
@@ -13,7 +13,10 @@
         <textarea name="isi" cols="50" rows="10"></textarea>
     </p>
     <p>
-        <input type="submit" value="Kirim" class="btn btn-large">
+        <input type="file" name="gambar">
+    </p>
+    <p>
+        <input type="submit" value="Kirim" class="btn-large">
     </p>
 </form>
 

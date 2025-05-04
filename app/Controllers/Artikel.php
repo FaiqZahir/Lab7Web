@@ -9,9 +9,19 @@ class Artikel extends BaseController
     public function admin_index()
     {
         $title = 'Daftar Artikel';
+        $q = $this->request->getVar('q') ?? '';
         $model = new ArtikelModel();
-        $artikel = $model->findAll();
-        return view('admin/admin_index', compact('artikel', 'title'));
+
+        $artikel = $model->like('judul', $q)->paginate(4);
+
+        $data = [
+            'title' => $title,
+            'q' => $q,
+            'artikel' => $artikel,
+            'pager' => $model->pager,
+        ];
+
+        return view('admin/admin_index', $data);
     }
 
     public function add()
@@ -21,14 +31,18 @@ class Artikel extends BaseController
         $isDataValid = $validation->withRequest($this->request)->run();
 
         if ($isDataValid) {
+            $file = $this->request->getFile('gambar');
+            $file->move(ROOTPATH . 'public/gambar');
+
             $artikel = new ArtikelModel();
             $artikel->insert([
                 'judul' => $this->request->getPost('judul'),
                 'kategori' => $this->request->getPost('kategori'),
                 'isi' => $this->request->getPost('isi'),
                 'slug' => url_title($this->request->getPost('judul')),
+                'gambar' => $file->getName(),
             ]);
-            return redirect()->to('/admin/artikel');
+            return redirect()->to('admin');
         }
 
         $title = "Tambah Artikel";
@@ -49,7 +63,7 @@ class Artikel extends BaseController
                 'kategori' => $this->request->getPost('kategori'),
                 'isi'   => $this->request->getPost('isi'),
             ]);
-            return redirect()->to('/admin/artikel');
+            return redirect()->to('admin');
         }
 
         $data = $artikel->where('id', $id)->first();
@@ -61,6 +75,12 @@ class Artikel extends BaseController
     {
         $artikel = new ArtikelModel();
         $artikel->delete($id);
-        return redirect()->to('/admin/artikel');
+        // Reset AUTO_INCREMENT berdasarkan ID terakhir
+        $db = \Config\Database::connect();
+        $query = $db->query("SELECT MAX(id) AS max_id FROM artikel")->getRow();
+        $nextId = ($query->max_id ?? 0) + 1;
+        $db->query("ALTER TABLE artikel AUTO_INCREMENT = $nextId");
+
+        return redirect()->to('admin');
     }
 }
