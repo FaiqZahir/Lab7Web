@@ -409,7 +409,9 @@ detail artikel:
      ```
 
 4. **Uji Coba**
+   
    ![Screenshot](public/readme/68.png)
+   
    ![Screenshot](public/readme/69.png)
 
 
@@ -461,6 +463,8 @@ detail artikel:
      ```
 
 3. **Uji Coba**
+   
 ![Screenshot](public/readme/69.png)
+
 ![Screenshot](public/readme/70.png)
 
