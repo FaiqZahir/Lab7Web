@@ -358,12 +358,6 @@ after filter (kategori: PHP):
 detail artikel:
 ![Screenshot](public/readme/65.png)
 
-# Praktikum 4
-
-### Membuat tabel user
-
-![Screenshot](public/readme/66.png)
-
 ## Praktikum 4 - Framework Lanjutan (Modul Login)
 
 ### Tujuan Praktikum
@@ -449,8 +443,8 @@ $routes->group('admin', ['filter' => 'auth'], function($routes) {
 ```
 
 ### Screenshot:
-- ![Login Form](public/readme/praktikum4-login.png)
-- ![Auth Filter](public/readme/praktikum4-auth-filter.png)
+![Screenshot](public/readme/66.png)
+![Screenshot](public/readme/67.png)
 
 # Praktikum 5: Pagination dan Pencarian
 
